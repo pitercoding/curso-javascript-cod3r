@@ -7,4 +7,5 @@ for (let index = 0; index < 10; index++) {
 }
 
 funcs[2]()
+funcs[6]()
 funcs[8]()
