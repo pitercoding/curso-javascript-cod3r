@@ -1,20 +1,37 @@
 // Escreva duas funções, uma para progressão aritmética e uma para progressão geométrica que recebam como parâmetros um número n (número de termo), a1 (o primeiro termo) e r (a razão) e escreva os n termos , bem como a soma dos elementos. Fórmula: a_n = a1 + (n - 1) * r / a_n = a1 * r^(n - 1)
 
-function gerarPA(a1, r, n) {
-  let pa = [];
+// Função para Progressão Aritmética
+function gerarPA(n, a1, r) {
+  let termos = [];
+  let soma = 0;
+
   for (let i = 0; i < n; i++) {
-    pa.push(a1 + i * r);
+    let termo = a1 + i * r;
+    termos.push(termo);
+    soma += termo;
   }
-  return pa;
+
+  console.log("Progressão Aritmética:");
+  console.log("Termos: ", termos.join(", "));
+  console.log("Soma: ", soma);
+  console.log();
 }
 
-function gerarPG(a1, r, n) {
-  let pg = [];
+// Função para Progressão Geométrica
+function gerarPG(n, a1, r) {
+  let termos = [];
+  let soma = 0;
+
   for (let i = 0; i < n; i++) {
-    pg.push(a1 * Math.pow(r, i));
+    let termo = a1 * Math.pow(r, i);
+    termos.push(termo);
+    soma += termo;
   }
-  return pg;
+  console.log("Progressão Geométrica:");
+  console.log("Termos: ", termos.join(", "));
+  console.log("Soma: ", soma);
+  console.log();
 }
 
-console.log(gerarPA(2, 3, 5)); // [2, 5, 8, 11, 14]
-console.log(gerarPG(2, 3, 5)); // [2, 6, 18, 54, 162]
+gerarPA(5, 2, 3); // 5 termos, primeiro termo = 2, razão = 3
+gerarPG(5, 2, 3); // 5 termos, primeiro termo = 2, razão = 3
