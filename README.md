@@ -2,16 +2,11 @@
 
 Repositório destinado ao acompanhamento do **Curso Web Moderno** da Cod3r, incluindo os principais tópicos de **JavaScript**, **HTML**, **CSS**, **React**, **Vue**, **Node**, **jQuery**, **Bootstrap**, **Webpack**, **Gulp**, **MySQL** e muito mais.
 
-## 🚀 Sugestão de Sequência de Estudo
+## 🚀 Tópicos
 
 ### 🎬 APRESENTAÇÃO
 - **Seção 1** - Introdução  
 - **Seção 2** - Configuração de Ambiente
-
-### 🌐 HTML E CSS
-- **Seção 13** - Conceitos sobre Web  
-- **Seção 14** - HTML  
-- **Seção 14** - CSS
 
 ### 💻 JAVASCRIPT
 - **Seção 3** - Iniciando com Programação  
@@ -22,11 +17,12 @@ Repositório destinado ao acompanhamento do **Curso Web Moderno** da Cod3r, incl
 - **Seção 8** - Array  
 - **Seção 9** - Lista de Exercícios de JavaScript  
 
-💡 **Dica:** Quando estiver confortável com JavaScript, avance para a **Seção 14** - *Integrando HTML, CSS e JS*.
+💡 **Dica:** Quando estiver confortável com JavaScript, avance para a **Seção 15** - *Integrando HTML, CSS e JS*.
 
-### 🎨 BOOTSTRAP E jQUERY
-- **Seção 19** - jQuery  
-- **Seção 20** - Bootstrap
+### 🌐 HTML E CSS
+- **Seção 12** - Conceitos sobre Web  
+- **Seção 13** - HTML  
+- **Seção 14** - CSS
 
 ### ⚙️ JAVASCRIPT MODERNO E FERRAMENTAS
 - **Seção 10** - Node  
@@ -34,7 +30,11 @@ Repositório destinado ao acompanhamento do **Curso Web Moderno** da Cod3r, incl
 - **Seção 16** - Ajax  
 - **Seção 17** - Gulp  
 - **Seção 38** - Gulp (Versão 3)  
-- **Seção 18** - Webpack  
+- **Seção 18** - Webpack
+
+### 🎨 BOOTSTRAP E jQUERY
+- **Seção 19** - jQuery  
+- **Seção 20** - Bootstrap
 
 📌 Para consolidar:  
 - **Seção 20** - Projeto Galeria *(Bootstrap, jQuery, Webpack)*
