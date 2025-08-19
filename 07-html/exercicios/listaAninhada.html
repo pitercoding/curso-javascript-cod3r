@@ -1,43 +1,65 @@
+<style>
+  .item ul {
+    display: none; /* começa fechado */
+  }
+
+  .item:not(.fechado) > ul {
+    display: block; /* abre quando não tem "fechado" */
+  }
+
+  .item {
+    cursor: pointer;
+  }
+</style>
+
 <h1>Projeto</h1>
 <ul class="tree">
-    <li>
-        backend
+  <li class="item">
+    backend
+    <ul>
+      <li class="item">
+        app
         <ul>
-            <li>
-                app
-                <ul>
-                    <li>produto.js</li>
-                    <li>usuario.js</li>
-                    <li>venda.js</li>
-                </ul>
-            </li>
-            <li>
-                config
-                <ul>
-                    <li>banco.js</li>
-                    <li>rotas.js</li>
-                    <li>servidor.js</li>
-                </ul>
-            </li>
+          <li>produto.js</li>
+          <li>usuario.js</li>
+          <li>venda.js</li>
         </ul>
-    </li>
-    <li>
-        frontend
+      </li>
+      <li class="item">
+        config
         <ul>
-            <li>
-                public
-                <ul>
-                    <li>app.css</li>
-                    <li>app.js</li>
-                    <li>index.html</li>
-                </ul>
-            </li>
+          <li>banco.js</li>
+          <li>rotas.js</li>
+          <li>servidor.js</li>
         </ul>
-    </li>
+      </li>
+    </ul>
+  </li>
+  <li class="item">
+    frontend
+    <ul>
+      <li class="item">
+        public
+        <ul>
+          <li>app.css</li>
+          <li>app.js</li>
+          <li>index.html</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
 
-<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css" />
 
 <script>
-    //...
+  document.querySelectorAll(".item").forEach((item) => {
+    item.addEventListener("click", function (event) {
+      // Evita que o clique em filhos propague pros pais
+      event.stopPropagation();
+
+      // Alterna uma classe "fechado" no elemento
+      this.classList.toggle("fechado");
+    });
+  });
 </script>
