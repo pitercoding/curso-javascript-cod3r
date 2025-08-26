@@ -41,5 +41,28 @@
 </style>
 
 <script>
- 
+  document.querySelectorAll("[wm-play], [wm-pause]").forEach((botao) => {
+    botao.onclick = () => {
+      const idVideo =
+        botao.getAttribute("wm-play") || botao.getAttribute("wm-pause");
+      const video = document.getElementById(idVideo);
+
+      if (botao.hasAttribute("wm-play")) video.play();
+      if (botao.hasAttribute("wm-pause")) video.pause();
+    };
+  });
+
+  // Progresso
+  document.querySelectorAll("[wm-progresso]").forEach((barra) => {
+    const idVideo = barra.getAttribute("wm-progresso");
+    const video = document.getElementById(idVideo);
+    const divInterna = barra.querySelector("div");
+
+    // Atualiza sempre que o tempo do vídeo mudar
+    video.ontimeupdate = () => {
+      const percentual = (video.currentTime / video.duration) * 100;
+      divInterna.style.width = `${percentual}%`;
+      divInterna.textContent = `${percentual.toFixed(1)}%`;
+    };
+  });
 </script>
