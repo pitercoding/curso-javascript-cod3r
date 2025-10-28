@@ -5,21 +5,28 @@ const sequence = {
 
 const produtos = {}
 
-// Salva o produto. Se não tem id, cria um
+// POST. Se não tem id, cria um
 function salvarProduto(produto) {
     if(!produto.id) produto.id = sequence.id
     produtos[produto.id] = produto
     return produto
 }
 
-// Retorna produto pelo id
+// GET produto pelo id
 function getProduto(id) {
     return produtos[id] || {}
 }
 
-// Retorna todos os produtos
+// GET todos os produtos
 function getProdutos() {
     return Object.values(produtos)
 }
 
-module.exports = { salvarProduto, getProduto, getProdutos }
+// DELETE
+function excluirProduto(id) {
+    const produto = produtos[id]
+    delete produtos[id]
+    return produto
+}
+
+module.exports = { salvarProduto, getProduto, getProdutos, excluirProduto }
