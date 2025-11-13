@@ -11,11 +11,18 @@ module.exports = {
     filename: "principal.js",
     path: __dirname + "/public",
   },
+  devServer: {
+    static: {
+      directory: __dirname + "/public",
+    },
+    port: 9000,
+    open: true,
+  },
   optimization: {
     minimize: !modoDev,
     minimizer: [
       new TerserPlugin({
-        parallel: true
+        parallel: true,
       }),
       new CssMinimizerPlugin(),
     ],
