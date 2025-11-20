@@ -21,8 +21,6 @@ Repositório destinado ao acompanhamento do **Curso Web Moderno** da Cod3r.
 - **Seção 15** - Integrando HTML, CSS e JS
 - **Seção 16** - Ajax  
 - **Seção 17** - Gulp
-
-## 🚀 Tópicos Restantes
 - **Seção 18** - Webpack
 - **Seção 19** - jQuery  
 - **Seção 20** - Bootstrap
@@ -30,6 +28,9 @@ Repositório destinado ao acompanhamento do **Curso Web Moderno** da Cod3r.
 - **Seção 22** - React
 - **Seção 23** - Projeto Calculadora
 - **Seção 24** - Projeto Cadastro de Usuário
+
+## 🚀 Tópicos Restantes
+
 - **Seção 25** - Projeto Cadastro - Integração com Banco de Dados (Firestone)
 - **Seção 26** - VueJs
 - **Seção 27** - Projeto VueJs
