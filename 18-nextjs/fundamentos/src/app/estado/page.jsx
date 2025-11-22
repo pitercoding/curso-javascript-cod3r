@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Layout from "../../components/Layout";
-import styles from "./Estado.module.css";
 
 export default function Estado(){
     const [ numero, setNumero ] = useState(0) //React Hooks
@@ -18,8 +17,8 @@ export default function Estado(){
     return (
         <Layout titulo="Componente com Estado">
             <div>{numero}</div>
-            <button onClick={incrementar} className={styles.botao}>Incrementar</button>
-            <button onClick={decrementar} className={styles.botao}>Decrementar</button>
+            <button onClick={incrementar}>Incrementar</button>
+            <button onClick={decrementar} >Decrementar</button>
         </Layout>
     )
 }
