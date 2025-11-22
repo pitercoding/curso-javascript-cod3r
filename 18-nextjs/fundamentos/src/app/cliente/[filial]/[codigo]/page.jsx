@@ -5,8 +5,8 @@ export default function ClientePorCodigo({params}) {
     
     return (
         <Layout titulo="Navegação Dinâmica">
-            <div>Código = {codigo}</div>
             <div>Filial = {filial}</div>
+            <div>Código = {codigo}</div>
         </Layout>
     )
 }
