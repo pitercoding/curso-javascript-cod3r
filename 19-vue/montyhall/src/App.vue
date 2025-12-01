@@ -1,17 +1,16 @@
 <template>
   <div id="app">
     <h1>Problema de Monty Hall</h1>
-    <AppGift />
+    <AppDoor number="1" :hasGift="false" />
   </div>
 </template>
 
 <script>
-import AppGift from './components/AppGift.vue';
-
+import AppDoor from './components/AppDoor.vue';
 
 export default {
     name: 'App',
-    components: { AppGift }
+    components: { AppDoor }
 }
 </script>
 
