@@ -28,14 +28,14 @@ Repositório destinado ao acompanhamento do **Curso Web Moderno** da Cod3r.
 - **Seção 22** - React
 - **Seção 23** - Projeto Calculadora
 - **Seção 24** - Projeto Cadastro de Usuário
-
-## 🚀 Tópicos Restantes
-
 - **Seção 25** - Projeto Cadastro - Integração com Banco de Dados (Firestone)
 - **Seção 26** - VueJs
 - **Seção 27** - Projeto VueJs
 - **Seção 28** - Projeto Calculadora (Vue)
 - **Seção 29** - Projeto Monty Hall (Vue)
+
+## 🚀 Tópicos Restantes
+
 - **Seção 30** - Banco Relacional (MySQL)  
 - **Seção 31** - Banco Não Relacional (MongoDB)  
 - **Seção 32** - Express
