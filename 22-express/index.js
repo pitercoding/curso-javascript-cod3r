@@ -1,7 +1,13 @@
 const express = require("express");
 const app = express();
 
-app.get("/opa", (req, res) => {
+app.use((req, res, next) => {
+  console.log("Antes...");
+  next()
+});
+
+app.get("/opa", (req, res, next) => {
+  console.log("Durante...");
   res.json({
     data: [
       { id: 7, name: "Ana", position: 1 },
@@ -11,8 +17,10 @@ app.get("/opa", (req, res) => {
     count: 30,
     skip: 0,
     limit: 3,
-    status: 200
+    status: 200,
   });
+
+  next()
 
   // res.json({
   //     nome: "Ipad 32Gb",
@@ -22,6 +30,12 @@ app.get("/opa", (req, res) => {
 
   // res.send('<h1>Estou bem!</h1><br><br><h2>Tipo é HTML</h2>')
 });
+
+app.use((req, res) => {
+  console.log("Depois...");
+});
+
+
 app.listen(3000, () => {
   console.log("Backend Ativo...");
 });
