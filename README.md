@@ -2,7 +2,7 @@
 
 Repositório destinado ao acompanhamento do **Curso Web Moderno** da Cod3r.
 
-## 🚀 Tópicos Finalizados
+## 🚀 Tópicos
 
 - **Seção 1** - Introdução  
 - **Seção 2** - Configuração de Ambiente
@@ -33,9 +33,6 @@ Repositório destinado ao acompanhamento do **Curso Web Moderno** da Cod3r.
 - **Seção 27** - Projeto VueJs
 - **Seção 28** - Projeto Calculadora (Vue)
 - **Seção 29** - Projeto Monty Hall (Vue)
-
-## 🚀 Tópicos Restantes
-
 - **Seção 30** - Banco Relacional (MySQL)  
 - **Seção 31** - Banco Não Relacional (MongoDB)  
 - **Seção 32** - Express
